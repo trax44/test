@@ -30,7 +30,7 @@ body {
     color: var(--dark-gray);
     line-height: 1.6;
     overflow-x: hidden;
-    background: #22c55e;
+    background: #ec4899;
 }
 
 .container {
@@ -120,7 +120,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: #22c55e;
+    background: #ec4899;
     padding-top: 80px;
     position: relative;
     overflow: hidden;
@@ -297,7 +297,7 @@ body {
    Stats Section
    =========================== */
 .stats {
-    background: #22c55e;
+    background: #ec4899;
     padding: 4rem 0;
     color: var(--white);
 }
@@ -326,7 +326,7 @@ body {
    =========================== */
 .services {
     padding: 6rem 0;
-    background: #22c55e;
+    background: #ec4899;
 }
 
 .section-title {
@@ -436,7 +436,7 @@ body {
    =========================== */
 .about {
     padding: 6rem 0;
-    background: #22c55e;
+    background: #ec4899;
 }
 
 .about-content {
@@ -548,7 +548,7 @@ body {
    CTA Section
    =========================== */
 .cta {
-    background: #22c55e;
+    background: #ec4899;
     padding: 6rem 0;
     text-align: center;
 }
@@ -600,7 +600,7 @@ body {
    Footer
    =========================== */
 .footer {
-    background: #22c55e;
+    background: #ec4899;
     color: var(--white);
     padding: 3rem 0 1rem;
 }
