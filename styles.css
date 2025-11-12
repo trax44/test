@@ -120,7 +120,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--lighter-blue) 0%, var(--white) 100%);
+    background: #22c55e;
     padding-top: 80px;
     position: relative;
     overflow: hidden;
@@ -297,7 +297,7 @@ body {
    Stats Section
    =========================== */
 .stats {
-    background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+    background: #22c55e;
     padding: 4rem 0;
     color: var(--white);
 }
@@ -326,7 +326,7 @@ body {
    =========================== */
 .services {
     padding: 6rem 0;
-    background: var(--light-gray);
+    background: #22c55e;
 }
 
 .section-title {
@@ -436,7 +436,7 @@ body {
    =========================== */
 .about {
     padding: 6rem 0;
-    background: var(--white);
+    background: #22c55e;
 }
 
 .about-content {
@@ -548,7 +548,7 @@ body {
    CTA Section
    =========================== */
 .cta {
-    background: linear-gradient(135deg, var(--lighter-blue), var(--white));
+    background: #22c55e;
     padding: 6rem 0;
     text-align: center;
 }
@@ -600,7 +600,7 @@ body {
    Footer
    =========================== */
 .footer {
-    background: var(--primary-blue);
+    background: #22c55e;
     color: var(--white);
     padding: 3rem 0 1rem;
 }
