@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analyse temporelle RHOBS : suivi mensuel, cumul annuel, cumul à date et moyenne annuelle. Visualisez l'évolution de vos indicateurs RH dans le temps.">
+    <meta name="keywords" content="analyse temporelle RH, suivi mensuel, cumul annuel, tendances RH, évolution indicateurs">
+    <meta name="author" content="RHOBS">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Analyse Temporelle - RHOBS">
+    <meta property="og:description" content="4 modules d'analyse temporelle pour suivre l'évolution de vos indicateurs RH.">
+    <title>Analyse Temporelle | RHOBS - Suivi et évolution de vos indicateurs RH</title>
+    <link rel="canonical" href="https://rhobs.fr/analyse-temporelle.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-main">RH<span>OBS</span></div>
+                    <div class="logo-tagline">La plateforme statistique RH au service de votre performance sociale</div>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index-egalite.html">Index Égalité</a></li>
+                        <li><a href="people-analytics.html">People Analytics</a></li>
+                        <li><a href="analyse-temporelle.html" class="active">Analyse Temporelle</a></li>
+                        <li><a href="masse-salariale.html">Masse Salariale</a></li>
+                        <li><a href="transparence-salariale.html">Transparence</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="#" onclick="openCalendly(); return false;" class="btn btn-primary">Réserver une démo</a>
+                    <button class="mobile-menu-btn" aria-label="Menu mobile">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Analyse temporelle</h1>
+            <p>Complétez votre analyse à date avec 4 modules d'analyse temporelle pour une vision dynamique de vos données RH.</p>
+        </div>
+    </section>
+
+    <!-- Modules -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>4 modules pour une analyse complète</h2>
+                <p>Suivez l'évolution de vos indicateurs RH selon différentes perspectives temporelles.</p>
+            </div>
+
+            <div class="modules-grid">
+                <div class="module-card">
+                    <h4>Suivi mensuel</h4>
+                    <p>Évolution des résultats mensuels sur toute la profondeur historique disponible</p>
+                </div>
+                <div class="module-card">
+                    <h4>Cumul annuel</h4>
+                    <p>Addition des résultats mensuels sur une année complète</p>
+                </div>
+                <div class="module-card">
+                    <h4>Cumul à date</h4>
+                    <p>Addition des résultats mensuels depuis le début de l'année</p>
+                </div>
+                <div class="module-card">
+                    <h4>Moyenne annuelle</h4>
+                    <p>Moyenne des résultats mensuels disponibles sur une année complète</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshot -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Une interface intuitive et puissante</h2>
+                <p>Visualisez vos données temporelles avec des graphiques clairs et interactifs.</p>
+            </div>
+            <div class="screenshot-container">
+                <img src="images/screenshot-analyse-temporelle.png" alt="Capture d'écran de l'analyse temporelle RHOBS" class="screenshot" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 500%22%3E%3Crect fill=%22%23F4F5F6%22 width=%22900%22 height=%22500%22 rx=%2216%22/%3E%3Crect fill=%22%23fff%22 x=%2220%22 y=%2220%22 width=%22860%22 height=%22460%22 rx=%228%22/%3E%3Crect fill=%22%231D3C70%22 x=%2220%22 y=%2220%22 width=%22860%22 height=%2250%22 rx=%228%22/%3E%3Ctext fill=%22%23fff%22 font-family=%22sans-serif%22 font-size=%2218%22 font-weight=%22bold%22 x=%2240%22 y=%2252%22%3ERHOBS - Analyse Temporelle%3C/text%3E%3Crect fill=%22%23F4F5F6%22 x=%2240%22 y=%2290%22 width=%22200%22 height=%22370%22 rx=%228%22/%3E%3Ctext fill=%22%231D3C70%22 font-family=%22sans-serif%22 font-size=%2214%22 font-weight=%22600%22 x=%2260%22 y=%22120%22%3EFiltres%3C/text%3E%3Crect fill=%22%23fff%22 x=%2260%22 y=%22135%22 width=%22160%22 height=%2230%22 rx=%224%22 stroke=%22%234D7DD1%22/%3E%3Crect fill=%22%23fff%22 x=%2260%22 y=%22175%22 width=%22160%22 height=%2230%22 rx=%224%22 stroke=%22%234D7DD1%22/%3E%3Crect fill=%22%23fff%22 x=%2260%22 y=%22215%22 width=%22160%22 height=%2230%22 rx=%224%22 stroke=%22%234D7DD1%22/%3E%3Crect fill=%22%23fff%22 x=%22260%22 y=%2290%22 width=%22600%22 height=%22370%22 rx=%228%22/%3E%3Cpolyline fill=%22none%22 stroke=%22%23EC7D05%22 stroke-width=%223%22 points=%22280,380 330,350 380,360 430,320 480,340 530,280 580,300 630,250 680,270 730,220 780,240 830,200%22/%3E%3Cpolyline fill=%22none%22 stroke=%22%234D7DD1%22 stroke-width=%223%22 points=%22280,400 330,390 380,385 430,370 480,375 530,350 580,360 630,330 680,340 730,310 780,320 830,290%22/%3E%3Cline stroke=%22%23ddd%22 x1=%22280%22 y1=%22420%22 x2=%22830%22 y2=%22420%22/%3E%3Ctext fill=%22%23474747%22 font-family=%22sans-serif%22 font-size=%2212%22 x=%22280%22 y=%22440%22%3EJan%3C/text%3E%3Ctext fill=%22%23474747%22 font-family=%22sans-serif%22 font-size=%2212%22 x=%22380%22 y=%22440%22%3EMar%3C/text%3E%3Ctext fill=%22%23474747%22 font-family=%22sans-serif%22 font-size=%2212%22 x=%22480%22 y=%22440%22%3EMai%3C/text%3E%3Ctext fill=%22%23474747%22 font-family=%22sans-serif%22 font-size=%2212%22 x=%22580%22 y=%22440%22%3EJuil%3C/text%3E%3Ctext fill=%22%23474747%22 font-family=%22sans-serif%22 font-size=%2212%22 x=%22680%22 y=%22440%22%3ESep%3C/text%3E%3Ctext fill=%22%23474747%22 font-family=%22sans-serif%22 font-size=%2212%22 x=%22780%22 y=%22440%22%3ENov%3C/text%3E%3Ctext fill=%22%231D3C70%22 font-family=%22sans-serif%22 font-size=%2216%22 font-weight=%22600%22 x=%22280%22 y=%22130%22%3E\u00c9volution mensuelle - Effectifs%3C/text%3E%3C/svg%3E'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tous les filtres du People Analytics disponibles</h2>
+                <p>Les filtres et les croisements du People Analytics sont également disponibles pour les modules temporels.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                            <polyline points="17 6 23 6 23 12"/>
+                        </svg>
+                    </div>
+                    <h3>Tendances claires</h3>
+                    <p>Identifiez rapidement les tendances positives ou négatives dans l'évolution de vos indicateurs RH.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Historique complet</h3>
+                    <p>Accédez à toute la profondeur historique disponible pour une analyse longitudinale approfondie.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                            <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+                        </svg>
+                    </div>
+                    <h3>Comparaisons périodiques</h3>
+                    <p>Comparez facilement les performances entre différentes périodes : mois, trimestres, années.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Suivez l'évolution de vos indicateurs RH</h2>
+            <p>Découvrez la puissance de l'analyse temporelle lors d'une démonstration personnalisée.</p>
+            <a href="#" onclick="openCalendly(); return false;" class="btn">Réserver une démo gratuite</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-main">RH<span style="color: #EC7D05;">OBS</span></div>
+                    <p>La plateforme statistique RH au service de votre performance sociale. Transformez vos données DSN en indicateurs stratégiques.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="index-egalite.html">Index Égalité</a></li>
+                        <li><a href="people-analytics.html">People Analytics</a></li>
+                        <li><a href="analyse-temporelle.html">Analyse Temporelle</a></li>
+                        <li><a href="masse-salariale.html">Masse Salariale</a></li>
+                        <li><a href="transparence-salariale.html">Transparence Salariale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                        <li><a href="mailto:contact@rhobs.fr">contact@rhobs.fr</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></li>
+                        <li><a href="mentions-legales.html#cookies">Gestion des cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RHOBS. Tous droits réservés. Données hébergées dans l'Union Européenne.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
