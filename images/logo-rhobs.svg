@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1D3C70;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4D7DD1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo RHOBS -->
+  <text x="20" y="60" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800" fill="#1D3C70" letter-spacing="-2">
+    RH<tspan fill="#EC7D05">OBS</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="20" y="85" font-family="Inter, Arial, sans-serif" font-size="9" fill="#474747" font-weight="500">
+    La plateforme statistique RH au service de votre performance sociale
+  </text>
+</svg>
