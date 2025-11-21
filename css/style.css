@@ -109,6 +109,11 @@ a:hover {
     align-items: flex-start;
 }
 
+.logo-image {
+    height: 60px;
+    width: auto;
+}
+
 .logo-main {
     font-size: 2rem;
     font-weight: 800;
@@ -633,6 +638,12 @@ textarea.form-control {
 .footer-brand p {
     color: rgba(255, 255, 255, 0.8);
     margin-top: 1rem;
+}
+
+.footer-logo {
+    height: 50px;
+    width: auto;
+    margin-bottom: 1rem;
 }
 
 .footer-links h4 {

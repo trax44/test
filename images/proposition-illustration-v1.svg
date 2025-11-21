@@ -1,0 +1,128 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#F4F5F6"/>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1D3C70;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4D7DD1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC7D05;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB861;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Container - Dashboard Panel -->
+  <g>
+    <!-- Large Dashboard Card -->
+    <rect x="50" y="50" width="700" height="500" rx="16" fill="white" filter="url(#shadow)"/>
+
+    <!-- Header Dashboard -->
+    <rect x="50" y="50" width="700" height="60" rx="16" fill="url(#blueGradient)"/>
+    <text x="80" y="88" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="white">Analyse RH - Dashboard</text>
+
+    <!-- KPI Cards Row -->
+    <g>
+      <!-- Card 1: Effectifs -->
+      <rect x="80" y="140" width="180" height="100" rx="12" fill="#F4F5F6"/>
+      <text x="100" y="170" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#474747">Effectifs</text>
+      <text x="100" y="210" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" fill="#1D3C70">1,247</text>
+      <text x="100" y="230" font-family="Inter, Arial, sans-serif" font-size="12" fill="#4D7DD1">+8.3% vs N-1</text>
+
+      <!-- Card 2: Turnover -->
+      <rect x="290" y="140" width="180" height="100" rx="12" fill="#F4F5F6"/>
+      <text x="310" y="170" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#474747">Turnover</text>
+      <text x="310" y="210" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" fill="#EC7D05">12.4%</text>
+      <text x="310" y="230" font-family="Inter, Arial, sans-serif" font-size="12" fill="#FFB861">-2.1% vs N-1</text>
+
+      <!-- Card 3: Masse Salariale -->
+      <rect x="500" y="140" width="180" height="100" rx="12" fill="#F4F5F6"/>
+      <text x="520" y="170" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#474747">Masse Salariale</text>
+      <text x="520" y="210" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#1D3C70">€42.8M</text>
+      <text x="520" y="230" font-family="Inter, Arial, sans-serif" font-size="12" fill="#4D7DD1">+5.2% vs N-1</text>
+    </g>
+
+    <!-- Bar Chart Section -->
+    <g>
+      <text x="80" y="280" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#1D3C70">Évolution Mensuelle</text>
+
+      <!-- Chart Axes -->
+      <line x1="80" y1="470" x2="700" y2="470" stroke="#474747" stroke-width="2"/>
+      <line x1="80" y1="300" x2="80" y2="470" stroke="#474747" stroke-width="2"/>
+
+      <!-- Bars -->
+      <rect x="120" y="380" width="50" height="90" rx="4" fill="url(#blueGradient)"/>
+      <rect x="200" y="360" width="50" height="110" rx="4" fill="url(#blueGradient)"/>
+      <rect x="280" y="340" width="50" height="130" rx="4" fill="url(#orangeGradient)"/>
+      <rect x="360" y="320" width="50" height="150" rx="4" fill="url(#blueGradient)"/>
+      <rect x="440" y="350" width="50" height="120" rx="4" fill="url(#blueGradient)"/>
+      <rect x="520" y="330" width="50" height="140" rx="4" fill="url(#orangeGradient)"/>
+      <rect x="600" y="310" width="50" height="160" rx="4" fill="url(#blueGradient)"/>
+
+      <!-- Month Labels -->
+      <text x="135" y="490" font-family="Inter, Arial, sans-serif" font-size="11" fill="#474747">Jan</text>
+      <text x="215" y="490" font-family="Inter, Arial, sans-serif" font-size="11" fill="#474747">Fév</text>
+      <text x="295" y="490" font-family="Inter, Arial, sans-serif" font-size="11" fill="#474747">Mar</text>
+      <text x="375" y="490" font-family="Inter, Arial, sans-serif" font-size="11" fill="#474747">Avr</text>
+      <text x="455" y="490" font-family="Inter, Arial, sans-serif" font-size="11" fill="#474747">Mai</text>
+      <text x="535" y="490" font-family="Inter, Arial, sans-serif" font-size="11" fill="#474747">Juin</text>
+      <text x="615" y="490" font-family="Inter, Arial, sans-serif" font-size="11" fill="#474747">Juil</text>
+    </g>
+  </g>
+
+  <!-- Right Side - HR Analytics Elements -->
+  <g>
+    <!-- Analytics Card 1 - Demographics -->
+    <rect x="800" y="50" width="350" height="160" rx="16" fill="white" filter="url(#shadow)"/>
+    <text x="830" y="85" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#1D3C70">Répartition H/F</text>
+
+    <!-- Pie Chart Elements -->
+    <circle cx="900" cy="145" r="50" fill="url(#blueGradient)"/>
+    <path d="M 900 145 L 900 95 A 50 50 0 0 1 935 175 Z" fill="url(#orangeGradient)"/>
+
+    <!-- Legend -->
+    <rect x="980" y="120" width="15" height="15" rx="3" fill="url(#blueGradient)"/>
+    <text x="1005" y="132" font-family="Inter, Arial, sans-serif" font-size="14" fill="#474747">Hommes 58%</text>
+    <rect x="980" y="150" width="15" height="15" rx="3" fill="url(#orangeGradient)"/>
+    <text x="1005" y="162" font-family="Inter, Arial, sans-serif" font-size="14" fill="#474747">Femmes 42%</text>
+
+    <!-- Analytics Card 2 - Calculations -->
+    <rect x="800" y="240" width="350" height="140" rx="16" fill="white" filter="url(#shadow)"/>
+    <text x="830" y="275" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#1D3C70">Calculs Automatisés</text>
+
+    <!-- Formula Icons -->
+    <text x="830" y="315" font-family="Inter, Arial, sans-serif" font-size="16" fill="#474747">∑ Σ</text>
+    <text x="870" y="315" font-family="Inter, Arial, sans-serif" font-size="14" fill="#EC7D05">Masse Salariale</text>
+    <text x="830" y="345" font-family="Inter, Arial, sans-serif" font-size="16" fill="#474747">⌀ μ</text>
+    <text x="870" y="345" font-family="Inter, Arial, sans-serif" font-size="14" fill="#4D7DD1">Moyennes</text>
+    <text x="1050" y="315" font-family="Inter, Arial, sans-serif" font-size="16" fill="#474747">%</text>
+    <text x="1070" y="315" font-family="Inter, Arial, sans-serif" font-size="14" fill="#EC7D05">Ratios</text>
+
+    <!-- Analytics Card 3 - Data Processing -->
+    <rect x="800" y="410" width="350" height="140" rx="16" fill="white" filter="url(#shadow)"/>
+    <text x="830" y="445" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#1D3C70">Traitement DSN</text>
+
+    <!-- Data Flow Icons -->
+    <rect x="830" y="465" width="60" height="50" rx="8" fill="#F4F5F6"/>
+    <text x="845" y="495" font-family="Inter, Arial, sans-serif" font-size="20" fill="#1D3C70">📄</text>
+
+    <text x="905" y="490" font-family="Inter, Arial, sans-serif" font-size="24" fill="#EC7D05">→</text>
+
+    <rect x="940" y="465" width="60" height="50" rx="8" fill="#F4F5F6"/>
+    <text x="955" y="495" font-family="Inter, Arial, sans-serif" font-size="20" fill="#EC7D05">⚙</text>
+
+    <text x="1015" y="490" font-family="Inter, Arial, sans-serif" font-size="24" fill="#4D7DD1">→</text>
+
+    <rect x="1050" y="465" width="60" height="50" rx="8" fill="#F4F5F6"/>
+    <text x="1065" y="495" font-family="Inter, Arial, sans-serif" font-size="20" fill="#4D7DD1">📊</text>
+  </g>
+
+  <!-- Shadow Filter Definition -->
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="15" flood-opacity="0.15" flood-color="#1D3C70"/>
+    </filter>
+  </defs>
+</svg>
