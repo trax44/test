@@ -26,7 +26,7 @@
                     <img src="images/logo-rhobs.png" alt="RHOBS - La plateforme statistique RH au service de votre performance sociale" class="logo-image">
                 </a>
                 <nav class="nav">
-                                        <ul class="nav-links">
+                    <ul class="nav-links">
                         <li><a href="index.html">Accueil</a></li>
                         <li class="dropdown">
                             <a href="#">Solutions</a>
@@ -61,22 +61,164 @@
         </div>
     </section>
 
-    <!-- Placeholder Content -->
+    <!-- Pricing Section -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Contenu à venir</h2>
-                <p>Cette page sera bientôt disponible avec notre formulaire de demande de devis.</p>
+                <h2>Une tarification accessible et dégressive</h2>
+                <p>Un tarif unitaire dégressif par pallier du nombre d'établissements. Abonnements annuels.</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Index égapro 2026</h3>
+                    <div class="price">A partir de 590€HT / an</div>
+                </div>
+                <div class="pricing-card">
+                    <h3>People analytics</h3>
+                    <div class="price">A partir de 190€HT / mois</div>
+                </div>
+                <div class="pricing-card">
+                    <h3>Masse salariale</h3>
+                    <div class="price">A partir de 190€HT / mois</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Banner -->
-    <section class="cta-banner">
+    <!-- Quote Form Section -->
+    <section class="section section-alt">
         <div class="container">
-            <h2>Contactez-nous dès maintenant</h2>
-            <p>En attendant, n'hésitez pas à nous contacter directement pour toute demande de devis.</p>
-            <a href="contact.html" class="btn">Nous contacter</a>
+            <div class="section-header">
+                <h2>Demande de devis</h2>
+                <p>Le montant de votre abonnement dépend du nombre d'établissements de votre structure, des modules et des options sélectionnées. Envoi du devis sous 48H ouvrés.</p>
+            </div>
+
+            <div class="quote-form-section">
+                <form class="quote-form" action="mailto:contact@rhobs.fr" method="post" enctype="text/plain" id="quoteForm">
+                    <!-- Personal Information -->
+                    <div class="form-group">
+                        <label for="prenom">Prénom *</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="entreprise">Nom de l'entreprise ou du groupe *</label>
+                        <input type="text" id="entreprise" name="entreprise" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adresse">Adresse *</label>
+                        <input type="text" id="adresse" name="adresse" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="poste">Intitulé du poste *</label>
+                        <input type="text" id="poste" name="poste" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse mail professionnelle *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telephone">Téléphone *</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nb_etablissements">Nombre d'établissements actifs en France *</label>
+                        <input type="number" id="nb_etablissements" name="nb_etablissements" min="1" required>
+                    </div>
+
+                    <!-- Subscription Choices -->
+                    <div class="form-checkbox-group">
+                        <label>Choix d'abonnements *</label>
+
+                        <!-- Index Égapro 2026 -->
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="subscription" value="index_egapro" id="index_egapro">
+                                I Index égapro 2026
+                            </label>
+                        </div>
+                        <div class="checkbox-sub-options" id="index_options">
+                            <div class="checkbox-item">
+                                <label>
+                                    <input type="checkbox" name="index_option" value="consolidation_ues">
+                                    Consolidation UES
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <label>
+                                    <input type="checkbox" name="index_option" value="calcul_filiales" id="calcul_filiales">
+                                    Calcul de l'index pour chaque filiale. Précisez le nombre d'entités
+                                    <input type="number" class="conditional-input" id="nb_entites" name="nb_entites" min="1" disabled>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <label>
+                                    <input type="checkbox" name="index_option" value="retraitement_fusion">
+                                    Retraitement fusion entité dans le groupe
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <label>
+                                    <input type="checkbox" name="index_option" value="methode_cotation">
+                                    Méthode de cotation des postes autre que la CSP
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- People Analytics -->
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="subscription" value="people_analytics" id="people_analytics">
+                                II People Analytics
+                            </label>
+                        </div>
+                        <div class="checkbox-sub-options" id="people_options">
+                            <div class="checkbox-item">
+                                <label>
+                                    <input type="checkbox" name="people_option" value="analyse_temporelle">
+                                    Module Analyse temporelle
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <label>
+                                    <input type="checkbox" name="people_option" value="tableaux_bord">
+                                    Module Tableaux de bord
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Masse Salariale -->
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="subscription" value="masse_salariale" id="masse_salariale">
+                                III Masse salariale
+                            </label>
+                        </div>
+                        <div class="checkbox-sub-options" id="masse_options">
+                            <div class="checkbox-item">
+                                <label>
+                                    <input type="checkbox" name="masse_option" value="analyse_temporelle_masse">
+                                    Module Analyse temporelle
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer la demande de devis</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -123,6 +265,67 @@
 
     <!-- Scripts -->
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script>
+        // Handle conditional form options
+        document.addEventListener('DOMContentLoaded', function() {
+            // Index Égapro options
+            const indexCheckbox = document.getElementById('index_egapro');
+            const indexOptions = document.getElementById('index_options');
+            const calculFiliales = document.getElementById('calcul_filiales');
+            const nbEntites = document.getElementById('nb_entites');
+
+            indexCheckbox.addEventListener('change', function() {
+                if (this.checked) {
+                    indexOptions.classList.add('active');
+                } else {
+                    indexOptions.classList.remove('active');
+                    indexOptions.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+                    nbEntites.value = '';
+                    nbEntites.disabled = true;
+                }
+            });
+
+            calculFiliales.addEventListener('change', function() {
+                nbEntites.disabled = !this.checked;
+                if (!this.checked) nbEntites.value = '';
+            });
+
+            // People Analytics options
+            const peopleCheckbox = document.getElementById('people_analytics');
+            const peopleOptions = document.getElementById('people_options');
+
+            peopleCheckbox.addEventListener('change', function() {
+                if (this.checked) {
+                    peopleOptions.classList.add('active');
+                } else {
+                    peopleOptions.classList.remove('active');
+                    peopleOptions.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+                }
+            });
+
+            // Masse Salariale options
+            const masseCheckbox = document.getElementById('masse_salariale');
+            const masseOptions = document.getElementById('masse_options');
+
+            masseCheckbox.addEventListener('change', function() {
+                if (this.checked) {
+                    masseOptions.classList.add('active');
+                } else {
+                    masseOptions.classList.remove('active');
+                    masseOptions.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+                }
+            });
+
+            // Form validation: at least one subscription must be selected
+            document.getElementById('quoteForm').addEventListener('submit', function(e) {
+                const subscriptions = document.querySelectorAll('input[name="subscription"]:checked');
+                if (subscriptions.length === 0) {
+                    e.preventDefault();
+                    alert('Veuillez sélectionner au moins un abonnement (I, II ou III).');
+                }
+            });
+        });
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
