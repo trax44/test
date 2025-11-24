@@ -79,7 +79,7 @@
                 </div>
                 <div class="pricing-card">
                     <h3>Masse salariale</h3>
-                    <div class="price">A partir de 190€HT / mois</div>
+                    <div class="price">A partir de 175€HT / mois</div>
                 </div>
             </div>
         </div>
@@ -94,7 +94,17 @@
             </div>
 
             <div class="quote-form-section">
-                <form class="quote-form" action="mailto:contact@rhobs.fr" method="post" enctype="text/plain" id="quoteForm">
+                <div id="successMessage" style="display: none; background: #4CAF50; color: white; padding: 2rem; border-radius: 8px; text-align: center; margin-bottom: 2rem;">
+                    <h3>✓ Votre demande a bien été transmise</h3>
+                    <p>Nous vous répondrons dans les 48H ouvrés.</p>
+                </div>
+                <form class="quote-form" action="https://formsubmit.co/contact@rhobs.fr" method="POST" id="quoteForm">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="Nouvelle demande de devis RHOBS">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="https://rhobs.fr/devis.html?success=true">
                     <!-- Personal Information -->
                     <div class="form-group">
                         <label for="prenom">Prénom *</label>
@@ -268,6 +278,15 @@
     <script>
         // Handle conditional form options
         document.addEventListener('DOMContentLoaded', function() {
+            // Check for success message
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('success') === 'true') {
+                document.getElementById('successMessage').style.display = 'block';
+                document.getElementById('quoteForm').style.display = 'none';
+                // Scroll to success message
+                document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+
             // Index Égapro options
             const indexCheckbox = document.getElementById('index_egapro');
             const indexOptions = document.getElementById('index_options');
