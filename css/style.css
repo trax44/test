@@ -822,6 +822,29 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+    /* Reduce header height */
+    .header {
+        padding: 0.5rem 0;
+    }
+
+    /* Reduce logo size */
+    .logo-image {
+        height: 40px;
+    }
+
+    /* Reduce button size significantly for mobile */
+    .btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.875rem;
+    }
+
+    /* Reduce burger menu size */
+    .mobile-menu-btn span {
+        width: 22px;
+        height: 2.5px;
+        margin: 4px 0;
+    }
+
     .nav-links {
         display: none;
     }
@@ -868,9 +891,24 @@ textarea.form-control {
         padding: 0 1rem;
     }
 
+    /* Further reduce header elements on very small screens */
+    .header {
+        padding: 0.4rem 0;
+    }
+
+    .logo-image {
+        height: 35px;
+    }
+
     .btn {
-        padding: 0.75rem 1.5rem;
-        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .mobile-menu-btn span {
+        width: 20px;
+        height: 2px;
+        margin: 3.5px 0;
     }
 
     .feature-card {
