@@ -832,6 +832,11 @@ textarea.form-control {
         height: 40px;
     }
 
+    /* Hide tagline on mobile */
+    .logo-tagline {
+        display: none;
+    }
+
     /* Reduce button size significantly for mobile */
     .btn {
         padding: 0.625rem 1.25rem;
