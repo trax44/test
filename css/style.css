@@ -127,7 +127,8 @@ a:hover {
 
 .logo-tagline {
     font-size: 0.75rem;
-    color: var(--text-dark);
+    color: var(--primary-dark);
+    font-weight: 700;
     margin-top: 2px;
     max-width: 280px;
     line-height: 1.3;
