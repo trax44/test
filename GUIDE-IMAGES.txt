@@ -1,0 +1,141 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                   GUIDE COMPLET DES IMAGES RHOBS                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+📁 EMPLACEMENT DU DOSSIER IMAGES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Chemin absolu: /home/user/test/images/
+  Chemin relatif (dans HTML): images/nom-fichier.png
+
+
+📸 IMAGES À AJOUTER (2 principales + 1 optionnelle)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  hero-dashboard.png
+    ├─ Dimensions: 800x500px minimum
+    ├─ Format: PNG ou JPG
+    ├─ Utilisé sur: Page d'accueil (index.html)
+    ├─ Emplacement code: index.html ligne ~69
+    └─ Description: Capture d'écran du tableau de bord principal RHOBS
+       montrant les indicateurs RH et graphiques
+
+2️⃣  screenshot-analyse-temporelle.png
+    ├─ Dimensions: 900x500px minimum
+    ├─ Format: PNG ou JPG
+    ├─ Utilisé sur: Page Analyse Temporelle (analyse-temporelle.html)
+    ├─ Emplacement code: analyse-temporelle.html ligne ~90
+    └─ Description: Capture d'écran des graphiques d'évolution temporelle
+       avec les 4 modules (suivi mensuel, cumul annuel, etc.)
+
+3️⃣  logo.png (OPTIONNEL)
+    ├─ Dimensions: 200x80px ou SVG
+    ├─ Format: PNG transparent ou SVG
+    ├─ Utilisé sur: Toutes les pages (header)
+    └─ Note: Le logo actuel est en texte HTML stylisé "RHOBS"
+       Vous pouvez le remplacer si vous avez un logo image
+
+
+🎬 VIDÉO (OPTIONNELLE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📹 demo-platform.mp4 (ou lien YouTube/Vimeo)
+    ├─ Format: MP4, WebM ou URL YouTube/Vimeo
+    ├─ Utilisé sur: Page People Analytics
+    ├─ Emplacement: Section avec class="video-placeholder"
+    └─ Description: Vidéo de démonstration de la plateforme RHOBS
+
+
+💻 MÉTHODES D'AJOUT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔵 Méthode 1: Copie locale
+   cp /chemin/source/image.png /home/user/test/images/hero-dashboard.png
+
+🔵 Méthode 2: Upload via interface graphique
+   1. Ouvrir l'explorateur de fichiers
+   2. Naviguer vers /home/user/test/images/
+   3. Glisser-déposer les images
+
+🔵 Méthode 3: Téléchargement URL (si wget/curl disponible)
+   cd /home/user/test/images/
+   wget -O hero-dashboard.png "https://votre-url.com/image.png"
+
+🔵 Méthode 4: Script helper fourni
+   cd /home/user/test/images/
+   ./add-images.sh
+
+
+📋 CHECKLIST AVANT PRODUCTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Ajouter hero-dashboard.png dans /home/user/test/images/
+□ Ajouter screenshot-analyse-temporelle.png dans /home/user/test/images/
+□ Vérifier que les images s'affichent correctement
+□ Optimiser les images (<500KB chacune recommandé)
+□ Anonymiser les données sensibles sur les screenshots
+□ (Optionnel) Ajouter le logo RHOBS
+□ (Optionnel) Ajouter la vidéo de démo
+□ Committer les images:
+  git add images/
+  git commit -m "feat: add website images and screenshots"
+  git push
+
+
+⚠️  IMPORTANT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Le site fonctionne SANS les images (fallback SVG automatique)
+✓ Les images améliorent l'expérience mais ne sont pas bloquantes
+✓ Format recommandé: PNG pour captures d'écran, JPG pour photos
+✓ Taille max: 1MB par image pour bonnes performances web
+✓ Vérifiez les droits d'utilisation de vos images
+✓ Anonymisez les données sensibles sur les screenshots
+
+
+📁 STRUCTURE COMPLÈTE DU PROJET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+/home/user/test/
+├── index.html                              ← Utilise hero-dashboard.png
+├── index-egalite.html
+├── people-analytics.html                   ← Espace pour vidéo
+├── analyse-temporelle.html                 ← Utilise screenshot-analyse-temporelle.png
+├── masse-salariale.html
+├── transparence-salariale.html
+├── contact.html
+├── mentions-legales.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+└── images/                                  ← VOTRE DOSSIER IMAGES ICI
+    ├── README.md                            ← Guide détaillé
+    ├── add-images.sh                        ← Script helper
+    ├── hero-dashboard.png                   ← À AJOUTER
+    ├── screenshot-analyse-temporelle.png    ← À AJOUTER
+    └── logo.png                             ← OPTIONNEL
+
+
+🚀 COMMANDES RAPIDES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Voir l'état actuel
+ls -lh /home/user/test/images/
+
+# Lancer le script helper
+/home/user/test/images/add-images.sh
+
+# Tester le site localement
+python3 -m http.server 8000
+
+# Committer les images
+git add images/ && git commit -m "feat: add images" && git push
+
+
+📞 SUPPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Documentation complète: /home/user/test/images/README.md
+Structure du projet: /home/user/test/STRUCTURE.md
+Contact: contact@rhobs.fr
+
