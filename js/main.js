@@ -202,13 +202,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Calendly popup function (called from onclick)
+// Google Calendar popup function (called from onclick)
 function openCalendly() {
-    if (typeof Calendly !== 'undefined') {
-        Calendly.initPopupWidget({url: 'https://calendly.com/youssef-yacoubi/30min'});
+    // Wait for Google Calendar API to be loaded
+    if (typeof calendar !== 'undefined' && calendar.schedulingButton) {
+        // Create a temporary container for the button
+        const tempContainer = document.createElement('div');
+        tempContainer.style.display = 'none';
+        document.body.appendChild(tempContainer);
+
+        // Load the Google Calendar button and trigger click
+        calendar.schedulingButton.load({
+            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3VqDVwZRdcYalfQ-64aIwJCYTqahJA5esXUjDqzBugTcaf1-Umz9SHAwUIBierElTKKxeyepsD?gv=true',
+            color: '#EC7D05',
+            label: 'Réserver un rendez-vous',
+            target: tempContainer,
+        });
+
+        // Simulate click on the generated button
+        setTimeout(() => {
+            const gcalButton = tempContainer.querySelector('button');
+            if (gcalButton) {
+                gcalButton.click();
+            }
+        }, 100);
     } else {
-        // Fallback if Calendly is not loaded
-        window.open('https://calendly.com/youssef-yacoubi/30min', '_blank');
+        // Fallback: open in new window
+        window.open('https://calendar.google.com/calendar/appointments/schedules/AcZssZ3VqDVwZRdcYalfQ-64aIwJCYTqahJA5esXUjDqzBugTcaf1-Umz9SHAwUIBierElTKKxeyepsD?gv=true', '_blank');
     }
     return false;
 }
